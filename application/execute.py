@@ -19,7 +19,9 @@ def get_files(_txt_dir_path, _loughran_path):
 
 
 class GetInitInfo:
+
     def __init__(self, path):
+
         self.path = path
 
     def get_path(self):
@@ -29,6 +31,8 @@ class GetInitInfo:
         """
 
         txt_dir_path = os.path.join(self.path, 'input_txtfile')
+        if not os.path.exists(txt_dir_path):
+            os.mkdir(txt_dir_path)
         _excel_path = os.path.join(self.path, 'output_excelfile/ProjectTextOuput.xlsx')
         _loughran_path = os.path.join(self.path, 'utils/Loughran-McDonald Sentiment Word Lists.xlsx')
 
