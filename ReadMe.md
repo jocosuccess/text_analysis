@@ -63,8 +63,12 @@ Project result is saved in output_excelfile directory.
 ## install additional dependencies
 
 - en-core-web-sm
-    o windows 10    
-    $python -m install spacy download en
+
+    o windows 10
+        
+        $ python -m install spacy download en
+    
     o ubuntu 16.04.05
-    $python -m install spacy download en_core_web_sm 
+    
+        $ python -m install spacy download en_core_web_sm 
     
