@@ -1,5 +1,5 @@
 import os
-from application.execute import ExecuteAnalysis, GetInitInfo, get_files
+from src.execute import ExecuteAnalysis, GetInitInfo, get_files
 from utils.file_handling import ControlFile
 
 

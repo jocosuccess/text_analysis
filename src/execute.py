@@ -2,7 +2,7 @@ import os
 import glob
 
 from utils.file_handling import ControlFile
-from utils.text_analysis import ControlSentence, ControlText, count_loughran_words_in_token
+from src.text_analysis import ControlSentence, ControlText, count_loughran_words_in_token
 
 
 def get_files(_txt_dir_path, _loughran_path):

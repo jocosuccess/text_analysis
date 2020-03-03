@@ -1,74 +1,72 @@
-## Description
+# TextualAnalysis
+
+## Overview
 
 This project is to analysis text files.
 
-After reading text from text files in directory, project processes text by removing meaningless sentences.
-Then this calculates loughran words from text preprocessed according to Loughran-McDonald Sentiment Word Lists.xlsx.
-Finally, this estimates Fog and Kincaid index of text.
+After reading the text from the text files in the directory, this project processes the text by removing meaningless sentences.
+Then this counts the loughran words from the text preprocessed according to the Loughran-McDonald Sentiment Word Lists.xlsx.
+Finally, this estimates the Fog and Kincaid index of text.
 
 ## Project Structure
--application directory:
+- src
 
-python file
+    The part to analyze the text
 
--input_txtfile
+- input_txtfile
 
-text files directory to need analysis
+    The text files for analysis
     
--output_txtfile
+- output_txtfile
 
-Excel file directory to show result
+    The excel file to save the result
     
--utils
+- utils
     
-python files & Loughran-McDonald Sentiment Word Lists.xlsx.
+    The file manager(import the result into the excel file) and Loughran-McDonald Sentiment Word Lists
 
--main.py
+- main
 
-python file to execute project
+    The main execution file
 
--requirements.txt
+- requirements.txt
 
-libraries necessary for executing project
+    All the libraries for this project
 
-## Project Settings
+## Project Installation
 
--Setting up python
+- Environment
 
-python version is above 3.5
+    Ubuntu 18.04, Python 3.6
 
--Setting python interpreter into project
-
-File/Settings(Ctrl+Alt+s)/Project/Project Interpreter
-
--Installing libraries
-
-In terminal, input following command line.
-
-    pip install <library name>
+- Dependency Installation
     
-Library names are in requirements.txt
+    ```
+        pip3 install -r requirements.txt 
+    ```    
 
-The main necessary libraries are textstat, spacy, Tokenizer, ntpath, xlsxwriter, openpyxl, en_core_web_sm.
+    The main necessary dependencies are textstat, spacy, Tokenizer, xlsxwriter, openpyxl.
     
-## Run Project
-
-Run main.py
-
-    python main.py
-    
-In terminal, text files to analysis are shown.
-Project result is saved in output_excelfile directory.
-
-## install additional dependencies
-
-- en-core-web-sm
-
-    o windows 10
+    ### Install en_core_web_sm dependencies
         
-        $ python -m install spacy download en
+            o windows 10
+                
+                $ python -m install spacy download en
+            
+            o ubuntu 18.04
+            
+                $ python -m install spacy download en_core_web_sm 
     
-    o ubuntu 16.04.05
+## Project Execution
+
+- In terminal, please run the following command in this project directory.
+
+    ```
+        python3 main.py
+    ```
     
-        $ python -m install spacy download en_core_web_sm 
+- output
+
+    In terminal, text files to analysis are shown.
+    The analysis result is saved in the output_excelfile directory.
     
