@@ -25,7 +25,7 @@ textstat==0.5.6
 thinc==7.1.1
 tokenizer==1.4.1
 tqdm==4.36.1
-urllib3==1.25.6
+urllib3==1.25.8
 wasabi==0.3.0
 xlrd==1.2.0
 XlsxWriter==1.2.2
